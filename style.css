@@ -42,9 +42,13 @@ h1 {
 
 .button-container {
   border: 2px solid black;
-  padding: 10px;
+  padding: 15px;
   border-radius: 7px;
   box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 button {
@@ -79,4 +83,20 @@ button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
+}
+
+#stopButton {
+  background: linear-gradient(to top, #cc4444, #aa3333);
+}
+
+#stopButton:hover {
+  background: linear-gradient(to bottom, #cc4444, #aa3333);
+}
+
+#resetButton {
+  background: linear-gradient(to top, #4466cc, #3355aa);
+}
+
+#resetButton:hover {
+  background: linear-gradient(to bottom, #4466cc, #3355aa);
 }
